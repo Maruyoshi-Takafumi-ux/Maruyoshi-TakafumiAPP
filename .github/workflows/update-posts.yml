@@ -1,0 +1,45 @@
+name: ブログ記事 自動取得
+ 
+on:
+  # 毎日午前7時（日本時間）に自動実行
+  schedule:
+    - cron: '0 22 * * *'  # UTC 22:00 = JST 07:00
+ 
+  # GitHubの画面から手動実行もできる
+  workflow_dispatch:
+ 
+jobs:
+  update-posts:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      # リポジトリをチェックアウト
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+ 
+      # Pythonをセットアップ
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+ 
+      # 必要なライブラリをインストール
+      - name: ライブラリをインストール
+        run: pip install requests
+ 
+      # スクレイピングスクリプトを実行
+      - name: 記事を取得して posts.json を更新
+        run: python scrape_posts.py
+ 
+      # posts.json に変更があればコミット＆プッシュ
+      - name: 変更をコミット
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add posts.json
+          git diff --staged --quiet || git commit -m "🤖 ブログ記事を自動更新 $(date +'%Y-%m-%d')"
+ 
+      - name: GitHubにプッシュ
+        run: git push origin HEAD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
