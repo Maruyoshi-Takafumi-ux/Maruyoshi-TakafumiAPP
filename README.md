@@ -8,5 +8,5 @@
 * **視点:** 3児の父 ＆ ミズカラポテンシャル公式アンバサダー
 
 テクノロジーの力で、無駄のない「本当に機能する行政DX」の実現を目指しています。
-* 🌐 [https://go2senkyo.com/seijika/182645/posts]
-* 📝 [https://go2senkyo.com/seijika/182645]
+* 🌐 [https://go2senkyo.com/seijika/182645]
+* 📝 [https://go2senkyo.com/seijika/182645/posts]
