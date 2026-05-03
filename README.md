@@ -22,7 +22,7 @@
 
 ## 主なプロジェクト (Featured Projects)
 * 🗣️ **[令和ボイス (Reiwa Voice)](https:r-voice.tech)** - 日本全国の市民の声を匿名で地方議会へ届ける陳情システム。
-* 🏛️ **[Code for Matsubara]** - 松原市のオープンデータを活用し、市民の手で行政DXを推進するコミュニティ（Founder / Lead Engineer）。
+* 🏛️ **[Code for Matsubara](https://codeformatsubara.org/)** - 松原市のオープンデータを活用し、市民の手で行政DXを推進するコミュニティ（Founder / Lead Engineer）。
 
 ## 公式リンク (Official Links)
 * 🕴️ 丸吉孝文ホームページ (公式サイト): [https://www.maruyoshi-takafumi.com/]
