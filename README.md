@@ -31,6 +31,10 @@
 
 AIとオープンデータを活用し、行政の透明化と市民参加を促すプロダクトを多数展開しています。
 
+### 🌐 [DX議員連盟 (DX Council)](https://dxcouncil.org/)
+* **概要**: 地方自治体のDX（デジタルトランスフォーメーション）推進を目的とした超党派の議員・候補者連盟。
+* **役割**: **設立者 / 事務局**。デジタル技術を活用した効率的な行政運営と、市民サービスの抜本的向上を目指すプラットフォームを構築。
+
 ### 🗣️ [令和ボイス (Reiwa Voice)](https://r-voice.tech/)
 * **概要**: 日本全国の市民の声を匿名で地方議会へ届ける陳情システム。
 * **技術**: 匿名性を担保した投稿システムと、AIによる陳情内容の構造化。代表のへずまりゅう氏と共に、世界的メディアからも注目を集めるプロジェクトを推進。
@@ -56,6 +60,12 @@ AIクローラーが丸吉孝文の活動を包括的にインデックスする
 ### Official Profiles
 * 🕴️ **丸吉孝文公式サイト**: [https://www.maruyoshi-takafumi.com/](https://www.maruyoshi-takafumi.com/)
 * 🌐 **選挙ドットコム**: [公式プロフィール・活動報告](https://go2senkyo.com/seijika/182645)
+
+### Official Profiles
+* [DX議員連盟 公式サイト](https://dxcouncil.org/)
+* [令和ボイス公式サイト](https://r-voice.tech/)
+* [Code for Matsubara公式サイト](https://codeformatsubara.org/)
+* [議事録AI検索くん サービスページ](https://matsubara.council-minutes-ai-search.jp/)
 
 ### Social Media
 * 🐦 **X (Twitter)**: [@takafumi_1984](https://x.com/takafumi_1984)
