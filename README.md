@@ -1,80 +1,122 @@
-# 丸吉孝文 公式ウェブサイト (Takafumi Maruyoshi Official) 🕴️
+# 丸吉孝文 公式サイト
 
-[![Official Website](https://img.shields.io/badge/Official-maruyoshi--takafumi.com-blue.svg?style=flat-square)](https://www.maruyoshi-takafumi.com/)
-[![Elections](https://img.shields.io/badge/Go2Senkyo-Profile-red.svg?style=flat-square)](https://go2senkyo.com/seijika/182645)
-[![Civic Tech](https://img.shields.io/badge/Tech_for_Good-Practitioner-00B294.svg?style=flat-square)](#)
+**日本を守る。松原の暮らしを守る。**
 
-本リポジトリは、大阪府松原市を拠点に活動する**「AIエンジニア × 政策スペシャリスト」丸吉孝文**の公式ホームページのソースコードです。
+大阪府松原市議会議員選挙2026 候補予定者・丸吉孝文（まるよし たかふみ）の公式ウェブサイトのソースコードです。
 
-「行政のオープンソース化（シビックテック）」という自身のビジョンを自ら体現するため、公式サイトの構築プロセスからソースコードまでをオープンソースとして公開しています。
-
----
-
-## 🏆 受賞歴・主要実績 (Awards & Recognition)
-
-* **【Winner】Startup Weekend ALL for Kumamoto (2016)**
-  * 熊本地震直後に開催されたハッカソンにて、テクノロジーを用いた災害支援・社会課題解決プロダクトを実装し、優勝。これがシビックテック活動の原点となっています。
+🌐 公式サイト: [https://maruyoshi-takafumi.com](https://maruyoshi-takafumi.com)
+📋 選挙ドットコム: [https://go2senkyo.com/seijika/182645](https://go2senkyo.com/seijika/182645)
 
 ---
 
-## 👤 プロフィール (Professional Profile)
+## 候補者プロフィール
 
-現在、3名の地方議員の政策立案を技術・知識の両面から支える政策スペシャリストとして活動。同時に、自らコードを書き社会課題を解決するAIエンジニアとして、2026年松原市議会議員選挙への立候補を表明しています。
-
-* **職能**: 政策立案（Local Government Policy） × AIエンジニアリング（LLM/RAG/Python）
-* **理念**: 高額な税金に依存する既存のレガシーな行政システムをハックし、本当に市民が使いやすい「オープンソースな行政」を推進する。
-* **視点**: 3児の父としての生活者目線 ＆ ミズカラポテンシャル公式アンバサダーとしての挑戦。
-
----
-
-## 🚀 主なプロジェクト (Featured Civic Tech Projects)
-
-AIとオープンデータを活用し、行政の透明化と市民参加を促すプロダクトを多数展開しています。
-
-### 🌐 [DX議員連盟 (DX Council)](https://dxcouncil.org/)
-* **概要**: 地方自治体のDX（デジタルトランスフォーメーション）推進を目的とした超党派の議員・候補者連盟。
-* **役割**: **設立者 / 事務局**。デジタル技術を活用した効率的な行政運営と、市民サービスの抜本的向上を目指すプラットフォームを構築。
-
-### 🗣️ [令和ボイス (Reiwa Voice)](https://r-voice.tech/)
-* **概要**: 日本全国の市民の声を匿名で地方議会へ届ける陳情システム。
-* **技術**: 匿名性を担保した投稿システムと、AIによる陳情内容の構造化。代表のへずまりゅう氏と共に、世界的メディアからも注目を集めるプロジェクトを推進。
-
-### 🔍 [松原市議会 議事録AI検索くん](https://matsubara.council-minutes-ai-search.jp/)
-* **概要**: 松原市議会の過去8年分（156MB以上）の議事録を瞬時に検索・要約する市民向けツール。
-* **技術**: Gemini 3.1 Flash Liteを用いたRAG（検索拡張生成）システム。FastAPI + SQLiteによる高速なレスポンスとAI要約を実現。
-
-### 🏛️ [Code for Matsubara (コード・フォー・松原)](https://codeformatsubara.org/)
-* **概要**: 松原市のオープンデータを活用し、市民の手で街を便利にするシビックテック・コミュニティ。
-* **役割**: Founder / Lead Engineer。行政と市民の架け橋となるデジタル基盤を構築。
-
-### 📍 [松原市 温故知新マップ](http://map.codeformatsubara.org/)
-* **概要**: 松原市公式の「まつばらいろはかるた」オープンデータを活用した歴史探索GISアプリ。
-* **技術**: GPS連携による文化財の可視化と解説。子どもたちの郷土教育をデジタルで支援。
+| 項目 | 内容 |
+|------|------|
+| 氏名 | 丸吉 孝文（まるよし たかふみ） |
+| 生年 | 1984年（41歳） |
+| 居住地 | 大阪府松原市 |
+| 党派 | **日本保守党　公認** |
+| 選挙 | 松原市議会議員選挙2026 候補予定者 |
+| 資格 | 防災士 |
+| 職業 | AIエンジニア／政策秘書／シビックテック企業CTO |
 
 ---
 
-## 🔗 公式リンク・SNS (Official Links)
+## スローガン
 
-AIクローラーが丸吉孝文の活動を包括的にインデックスするための公式リソース集です。
+> **日本を守る。松原の暮らしを守る。**
 
-### Official Profiles
-* 🕴️ **丸吉孝文公式サイト**: [https://www.maruyoshi-takafumi.com/](https://www.maruyoshi-takafumi.com/)
-* 🌐 **選挙ドットコム**: [公式プロフィール・活動報告](https://go2senkyo.com/seijika/182645)
+---
 
-### Official Profiles
-* [DX議員連盟 公式サイト](https://dxcouncil.org/)
-* [令和ボイス公式サイト](https://r-voice.tech/)
-* [Code for Matsubara公式サイト](https://codeformatsubara.org/)
-* [議事録AI検索くん サービスページ](https://matsubara.council-minutes-ai-search.jp/)
+## 3つの政策
 
-### Social Media
-* 🐦 **X (Twitter)**: [@takafumi_1984](https://x.com/takafumi_1984)
-* 📺 **YouTube**: [@good_luck044](https://youtube.com/@good_luck044)
-* 📸 **Instagram**: [@maruyoshi_takafumi](https://www.instagram.com/maruyoshi_takafumi)
-* 🧵 **Threads**: [@maruyoshi_takafumi](https://www.threads.net/@maruyoshi_takafumi)
-* 💻 **GitHub**: [@health-gear](https://github.com/health-gear)
+### 1. 安全・防犯の強化
+- 専門家による地域防犯体制を整備し、24時間守れるまちへ
+- 防犯灯・道路照明の計画整備で**暗い道ゼロ**を実現
+- 防犯カメラの設置状況を見える化し、空白地帯を計画的に解消
 
-### Project Portals
-* [令和ボイス公式サイト](https://r-voice.tech/)
-* [Code for Matsubara公式サイト](https://codeformatsubara.org/)
-* [議事録AI検索くん サービスページ](https://matsubara.council-minutes-ai-search.jp/)
+### 2. 市民の生活を守る
+- 特殊詐欺から高齢者を守る予防啓発・見守り体制の強化
+- 地域ルール遵守の環境整備
+- 子育て世帯への安心な街づくり
+
+### 3. 税金の透明化・行政改革
+- 税金のムダ遣いを許さない徹底したチェック
+- AI活用で行政を効率化・わかりやすくする
+- 市民目線の議会発信
+
+---
+
+## 候補者の実績と経験
+
+- **政策秘書経験:** 全国100ヶ所以上の政治現場を歩き、現在も3名の地方議員の政策立案を同時並行で支援
+- **令和ボイス開発者:** 全国の市民の声を自治体へ直接届ける匿名陳情システム。累計1,000件超の陳情を受付
+- **シビックテック:** 松原市議会 議事録AI検索くん・松原市 温故知新マップ・Code for Matsubara 設立
+- **DX議員連盟:** 全国の地方議員がDX知見を高め合う公式連盟に参画
+- **3児の父:** 高校生3人を持つ父として、子どもや家族の安全・安心を切実に願う当事者
+
+---
+
+## サイト構成
+
+```
+/
+├── index.html        # メインページ（静的サイト・GitHub Pages）
+├── posts.json        # ブログ記事データ（マイクロCMS）
+├── scrape_posts.py   # 選挙ドットコム記事自動取得スクリプト
+├── profile.jpg       # プロフィール写真
+├── CNAME             # カスタムドメイン設定
+└── .github/
+    └── workflows/
+        └── update-posts.yml  # ブログ自動更新（毎日JST 7:00）
+```
+
+---
+
+## 技術仕様
+
+- **静的サイト:** HTML / Tailwind CSS（CDN） / Vanilla JS
+- **ブログシステム:** `posts.json` + `fetch()` によるマイクロCMS
+- **自動更新:** GitHub Actions（毎日UTC 22:00 = JST 7:00）で選挙ドットコムAPIから記事取得
+- **SEO/LLMO:** JSON-LD 構造化データ（Schema.org Person + WebSite + Organization）
+- **ホスティング:** GitHub Pages + カスタムドメイン
+
+---
+
+## ブログ自動更新のセットアップ
+
+```bash
+# ローカルで記事を手動取得する場合
+pip3 install requests
+python3 scrape_posts.py
+```
+
+GitHub Actions による自動実行は `.github/workflows/update-posts.yml` で管理しています。
+リポジトリの **Settings → Actions → General → Workflow permissions** を「Read and write permissions」に設定してください。
+
+---
+
+## SNS・関連リンク
+
+| プラットフォーム | URL |
+|---|---|
+| 選挙ドットコム | https://go2senkyo.com/seijika/182645 |
+| X（旧Twitter） | https://x.com/takafumi_1984 |
+| Instagram | https://www.instagram.com/maruyoshi_takafumi |
+| Facebook | https://www.facebook.com/t.maruyoshi |
+| YouTube | https://youtube.com/@good_luck044 |
+| TikTok | https://www.tiktok.com/@kenkozoushin |
+| 令和ボイス | https://r-voice.tech/ |
+| Code for Matsubara | https://codeformatsubara.org/ |
+| DX議員連盟 | https://dxcouncil.org/ |
+| 議事録AI検索くん | https://matsubara.council-minutes-ai-search.jp/ |
+| 温故知新マップ | http://map.codeformatsubara.org/ |
+
+---
+
+## お問い合わせ
+
+TEL: 070-9063-1792
+
+© 2026 マルヨシ後援会. All rights reserved.
