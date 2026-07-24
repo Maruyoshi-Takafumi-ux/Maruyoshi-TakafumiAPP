@@ -1,0 +1,56 @@
+name: Update Posts, YouTube & Instagram
+
+on:
+  schedule:
+    # 毎日 JST 07:00 (= UTC 22:00 前日) に自動実行
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリをインストール
+        run: pip install requests
+
+      # ── 1. 選挙ドットコム ブログ記事 ──────────────────────────
+      - name: ブログ記事を更新 (scrape_posts.py)
+        run: python scrape_posts.py
+
+      # ── 2. YouTube 最新動画 ────────────────────────────────────
+      - name: YouTube動画フィードを更新 (scrape_youtube.py)
+        run: python scrape_youtube.py
+        # チャンネルIDを設定し忘れるとエラーになります
+        # scrape_youtube.py の CHANNEL_ID を設定してください
+
+      # ── 3. Instagram 最新投稿 ──────────────────────────────────
+      - name: Instagram投稿フィードを更新 (scrape_instagram.py)
+        run: python scrape_instagram.py
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        # INSTAGRAM_TOKEN が未設定の場合はスキップ（エラーにしない）
+        continue-on-error: true
+
+      # ── コミット & プッシュ ────────────────────────────────────
+      - name: 変更をコミット & プッシュ
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts.json youtube_posts.json instagram_posts.json
+          # 変更があればコミット（なければスキップ）
+          git diff --cached --quiet || git commit -m "🔄 自動更新: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,8 @@
+{
+  "_readme": {
+    "説明": "丸吉孝文 YouTube最新動画リスト",
+    "自動更新": "GitHub Actions / scrape_youtube.py が毎日更新",
+    "最終更新": "初期テンプレート（GitHub Actionsが自動上書きします）"
+  },
+  "videos": []
+}
