@@ -1,47 +1,56 @@
-name: ブログ記事 自動取得
- 
+name: Update Posts, YouTube & Instagram
+
 on:
-  # 毎日午前7時（日本時間）に自動実行
   schedule:
-    - cron: '0 22 * * *'  # UTC 22:00 = JST 07:00
- 
-  # GitHubの画面から手動実行もできる
-  workflow_dispatch:
- 
+    # 毎日 JST 07:00 (= UTC 22:00 前日) に自動実行
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
-  update-posts:
+  update:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'   # ← この行を追加
- 
+
     steps:
-      # リポジトリをチェックアウト
-      - name: リポジトリを取得
+      - name: チェックアウト
         uses: actions/checkout@v4
- 
-      # Pythonをセットアップ
+
       - name: Python セットアップ
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
- 
-      # 必要なライブラリをインストール
-      - name: ライブラリをインストール
+
+      - name: 依存ライブラリをインストール
         run: pip install requests
- 
-      # スクレイピングスクリプトを実行
-      - name: 記事を取得して posts.json を更新
+
+      # ── 1. 選挙ドットコム ブログ記事 ──────────────────────────
+      - name: ブログ記事を更新 (scrape_posts.py)
         run: python scrape_posts.py
- 
-      # posts.json に変更があればコミット＆プッシュ
-      - name: 変更をコミット
+
+      # ── 2. YouTube 最新動画 ────────────────────────────────────
+      - name: YouTube動画フィードを更新 (scrape_youtube.py)
+        run: python scrape_youtube.py
+        # チャンネルIDを設定し忘れるとエラーになります
+        # scrape_youtube.py の CHANNEL_ID を設定してください
+
+      # ── 3. Instagram 最新投稿 ──────────────────────────────────
+      - name: Instagram投稿フィードを更新 (scrape_instagram.py)
+        run: python scrape_instagram.py
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        # INSTAGRAM_TOKEN が未設定の場合はスキップ（エラーにしない）
+        continue-on-error: true
+
+      # ── コミット & プッシュ ────────────────────────────────────
+      - name: 変更をコミット & プッシュ
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "GitHub Actions Bot"
-          git add posts.json
-          git diff --staged --quiet || git commit -m "🤖 ブログ記事を自動更新 $(date +'%Y-%m-%d')"
- 
-      - name: GitHubにプッシュ
-        run: git push origin HEAD
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts.json youtube_posts.json instagram_posts.json
+          # 変更があればコミット（なければスキップ）
+          git diff --cached --quiet || git commit -m "🔄 自動更新: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
