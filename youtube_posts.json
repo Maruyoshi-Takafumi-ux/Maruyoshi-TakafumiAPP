@@ -2,9 +2,17 @@
   "_readme": {
     "説明": "丸吉孝文 YouTube最新動画リスト",
     "自動更新": "GitHub Actions / scrape_youtube.py が毎日更新",
-    "最終更新": "2026-07-30 23:14:04"
+    "最終更新": "2026-07-31 23:10:35"
   },
   "videos": [
+    {
+      "videoId": "zgkcj10oXl4",
+      "title": "【松原市議会議員選挙2026の候補予定者一覧公約政策】松原市でいただくご相談#松原市議会議員選挙 #松原市議会議員選挙2026 #松原市議選 #松原市議選2026 #日本保守党",
+      "publishedAt": "2026-07-31T00:29:37+00:00",
+      "url": "https://www.youtube.com/shorts/zgkcj10oXl4",
+      "thumbnail": "https://i3.ytimg.com/vi/zgkcj10oXl4/hqdefault.jpg",
+      "description": "【松原市議会議員選挙2026の候補予定者一覧公約政策】日本保守党｜丸吉孝文｜防災士として、エンジニアとして、そして3児の父として、「安心して暮らせる松原」をつくりたいという思いで政治に挑戦しています。詳細プロフィールはこちら▼▼▼ https://go2senkyo.com/seijika/182645\n\n松原市でいただくご相談で多いのは防犯に関するご相談です。\n\n#松原市議会議員選挙 #松原市議"
+    },
     {
       "videoId": "vxbbSqRgnPU",
       "title": "【松原市議会議員選挙2026候補予定者一覧公約政策】松原市で増えている犯罪#松原市議会議員選挙#松原市議会議員選挙2026#松原市議選#松原市議選2026#日本保守党",
@@ -92,14 +100,6 @@
       "url": "https://www.youtube.com/shorts/kzwrCCgc6D4",
       "thumbnail": "https://i4.ytimg.com/vi/kzwrCCgc6D4/hqdefault.jpg",
       "description": "【松原市議会議員選挙2026の候補予定者一覧公約政策】日本保守党｜丸吉孝文 ｜防災士として、エンジニアとして、そして3児の父として、「安心して暮らせる松原」をつくりたいという思いで政治に挑戦しています。\n詳細プロフィールはこちら▼▼▼ https://go2senkyo.com/seijika/182645\n\n松原市でどんなことをしたいですか\n\n松原市の防災を\n\nもっと強化して\n\nいきたいと\n\n思"
-    },
-    {
-      "videoId": "QjFvz3gH-s0",
-      "title": "【松原市議会議員選挙2026候補予定者一覧公約政策】松原市に防犯カメラを#松原市議会議員選挙#松原市議会議員選挙2026#松原市議選#松原市議選2026#日本保守党",
-      "publishedAt": "2026-07-19T15:57:50+00:00",
-      "url": "https://www.youtube.com/shorts/QjFvz3gH-s0",
-      "thumbnail": "https://i2.ytimg.com/vi/QjFvz3gH-s0/hqdefault.jpg",
-      "description": "【松原市議会議員選挙2026の候補予定者一覧公約政策】日本保守党｜丸吉孝文 ｜防災士として、エンジニアとして、そして3児の父として、「安心して暮らせる松原」をつくりたいという思いで政治に挑戦しています。\n詳細プロフィールはこちら▼▼▼ https://go2senkyo.com/seijika/182645\n\n#松原市議会議員選挙 \n#松原市議会議員選挙2026 \n#松原市議選 \n#松原市議選20"
     }
   ]
 }
