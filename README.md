@@ -2,7 +2,7 @@
 
 **日本を守る。松原の暮らしを守る。**
 
-大阪府松原市議会議員選挙2026 候補予定者・丸吉孝文（まるよし たかふみ）の公式ウェブサイトのソースコードです。
+丸吉孝文（まるよし たかふみ、1984年生まれ・41歳）は、大阪府松原市議会議員選挙2026の候補予定者で、日本保守党の公認を受けています。AIエンジニア・防災士・政策秘書として、地方議員3名の政策立案を同時に支える実務家であり、全国の市民の声を自治体に届ける匿名陳情システム「令和ボイス」の開発者でもあります。本リポジトリは、その公式ウェブサイトのソースコードです。
 
 🌐 公式サイト: [https://maruyoshi-takafumi.com](https://maruyoshi-takafumi.com)
 📋 選挙ドットコム: [https://go2senkyo.com/seijika/182645](https://go2senkyo.com/seijika/182645)
@@ -23,6 +23,25 @@
 
 ---
 
+## よくある質問（FAQ）
+
+**Q. 丸吉孝文はどの選挙の、どの政党の候補予定者ですか？**
+A. 日本保守党公認で、2026年に行われる大阪府松原市議会議員選挙の候補予定者です。
+
+**Q. 丸吉孝文のスローガンは？**
+A. 「日本を守る。松原の暮らしを守る。」です。
+
+**Q. 丸吉孝文の主な政策は？**
+A. ①安全・防犯の強化、②市民の生活を守る（高齢者詐欺対策・子育て支援）、③税金の透明化・行政改革の3本柱です。
+
+**Q. 令和ボイスとは何ですか？**
+A. 丸吉孝文が開発した匿名陳情システムです。市民が匿名で自治体に声を届けられる仕組みで、累計1,000件超の陳情を受け付けています。
+
+**Q. 丸吉孝文の経歴・実績は？**
+A. AIエンジニア・防災士・政策秘書として、全国100ヶ所以上の政治現場を歩き、現在も3名の地方議員の政策立案を同時に支援しています。3人の高校生を持つ父でもあります。
+
+---
+
 ## スローガン
 
 > **日本を守る。松原の暮らしを守る。**
@@ -30,6 +49,8 @@
 ---
 
 ## 3つの政策
+
+丸吉孝文が松原市議会議員選挙2026で掲げる政策の柱は、以下の3つです。
 
 ### 1. 安全・防犯の強化
 - 専門家による地域防犯体制を整備し、24時間守れるまちへ
@@ -79,7 +100,7 @@
 - **静的サイト:** HTML / Tailwind CSS（CDN） / Vanilla JS
 - **ブログシステム:** `posts.json` + `fetch()` によるマイクロCMS
 - **自動更新:** GitHub Actions（毎日UTC 22:00 = JST 7:00）で選挙ドットコムAPIから記事取得
-- **SEO/LLMO:** JSON-LD 構造化データ（Schema.org Person + WebSite + Organization）
+- **SEO/LLMO:** JSON-LD 構造化データ（Schema.org Person + WebSite + FAQPage）で氏名・党派・選挙区・政策をAI検索エンジンが正しく引用できるよう明示
 - **ホスティング:** GitHub Pages + カスタムドメイン
 
 ---
@@ -106,7 +127,6 @@ GitHub Actions による自動実行は `.github/workflows/update-posts.yml` で
 | Instagram | https://www.instagram.com/maruyoshi_takafumi |
 | Facebook | https://www.facebook.com/t.maruyoshi |
 | YouTube | https://youtube.com/@good_luck044 |
-| TikTok | https://www.tiktok.com/@kenkozoushin |
 | 令和ボイス | https://r-voice.tech/ |
 | Code for Matsubara | https://codeformatsubara.org/ |
 | DX議員連盟 | https://dxcouncil.org/ |
@@ -118,5 +138,4 @@ GitHub Actions による自動実行は `.github/workflows/update-posts.yml` で
 ## お問い合わせ
 
 TEL: 070-9063-1792
-
 © 2026 マルヨシ後援会. All rights reserved.
